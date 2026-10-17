@@ -70,13 +70,13 @@ export default function App() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0b0d10] px-5 py-8 text-[#e6eaf0] sm:px-10">
+    <main className="min-h-screen w-full min-w-0 overflow-x-clip bg-[#0b0d10] px-4 py-6 text-[#e6eaf0] sm:px-10 sm:py-8">
       <header className="mx-auto flex max-w-5xl items-center justify-between border-b border-white/10 pb-5">
         <a href="#" className="font-mono font-bold tracking-tight">
           <span className="text-[#83f28f]">R.</span>OS
         </a>
 
-        <nav className="flex items-center gap-5 text-sm text-gray-400">
+        <nav className="flex flex-wrap items-center justify-end gap-3 text-xs text-gray-400 sm:gap-5 sm:text-sm">
           <a href="#terminal" className="hover:text-white">Terminal</a>
           <a href="#projects" className="hover:text-white">Projects</a>
           <a href="#about" className="hover:text-white">About</a>
@@ -89,7 +89,7 @@ export default function App() {
             ENGINEER / BUILDER / EXPLORER
           </p>
 
-          <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl">
+          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
             I build things
             <br />
             <span className="text-gray-500">that work.</span>
@@ -110,7 +110,7 @@ export default function App() {
 
         <section
           id="terminal"
-          className="overflow-hidden rounded-xl border border-white/10 bg-[#11151a] shadow-2xl"
+          className="w-full min-w-0 overflow-hidden rounded-xl border border-white/10 bg-[#11151a] shadow-2xl"
         >
           <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
             <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
@@ -121,7 +121,7 @@ export default function App() {
             </span>
           </div>
 
-          <div className="p-5 font-mono text-sm">
+          <div className="min-w-0 p-3 font-mono text-xs sm:p-5 sm:text-sm">
             <div className="min-h-48 space-y-2" aria-live="polite">
               {history.map((line, index) => (
                 <p

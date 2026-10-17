@@ -29,3 +29,18 @@ input {
   background: #83f28f;
   color: #0b0d10;
 }
+
+html {
+  width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  width: 100%;
+  overflow-x: clip;
+}
+
+#root {
+  width: 100%;
+  min-width: 0;
+}
