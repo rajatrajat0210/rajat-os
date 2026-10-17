@@ -70,7 +70,7 @@ export default function App() {
   }
 
   return (
-    <main className="min-h-screen w-full min-w-0 overflow-x-clip bg-[#0b0d10] px-4 py-6 text-[#e6eaf0] sm:px-10 sm:py-8">
+    <main className="min-h-screen w-full min-w-0 bg-[#0b0d10] px-4 py-6 text-[#e6eaf0] sm:px-10 sm:py-8">
       <header className="mx-auto flex max-w-5xl items-center justify-between border-b border-white/10 pb-5">
         <a href="#" className="font-mono font-bold tracking-tight">
           <span className="text-[#83f28f]">R.</span>OS
