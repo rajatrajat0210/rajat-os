@@ -44,3 +44,95 @@ body {
   width: 100%;
   min-width: 0;
 }
+
+
+/* RAJAT.OS terminal animations */
+
+.terminal-shell {
+  isolation: isolate;
+  transition:
+    border-color 250ms ease,
+    box-shadow 250ms ease;
+}
+
+.terminal-shell:hover {
+  border-color: rgb(131 242 143 / 24%);
+  box-shadow:
+    0 20px 70px rgb(0 0 0 / 25%),
+    0 0 35px rgb(131 242 143 / 4%);
+}
+
+.terminal-glow {
+  z-index: -1;
+  background: none;
+}
+
+.terminal-shell:focus-within .terminal-cursor {
+  display: none;
+}
+
+.terminal-pulse {
+  animation: terminal-pulse 2s ease-in-out infinite;
+}
+
+.terminal-cursor {
+  animation: terminal-blink 1s steps(2, start) infinite;
+}
+
+.terminal-input {
+  caret-color: #83f28f;
+}
+
+.terminal-line {
+  animation: terminal-line-in 280ms ease-out both;
+}
+
+.terminal-shortcut {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes terminal-pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 8px rgb(131 242 143 / 45%);
+  }
+  50% {
+    opacity: 0.45;
+    box-shadow: 0 0 2px rgb(131 242 143 / 15%);
+  }
+}
+
+@keyframes terminal-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes terminal-line-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .terminal-pulse,
+  .terminal-cursor,
+  .terminal-line {
+    animation: none;
+  }
+
+  .terminal-shell,
+  .terminal-shortcut,
+  .terminal-glow {
+    transition: none;
+  }
+
+  .terminal-shortcut:hover {
+    transform: none;
+  }
+}
