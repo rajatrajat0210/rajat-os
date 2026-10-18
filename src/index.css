@@ -92,6 +92,10 @@ body {
   animation: skill-panel-enter 180ms ease-out both;
 }
 
+.career-details {
+  animation: career-details-enter 220ms ease-out both;
+}
+
 .terminal-shortcut {
   -webkit-tap-highlight-color: transparent;
 }
@@ -135,6 +139,17 @@ body {
   }
 }
 
+@keyframes career-details-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -143,7 +158,8 @@ body {
   .terminal-pulse,
   .terminal-cursor,
   .terminal-line,
-  .skill-panel {
+  .skill-panel,
+  .career-details {
     animation: none;
   }
 

@@ -3,6 +3,7 @@ import { ArrowUpRight } from 'lucide-react'
 import Projects from './sections/Projects'
 import TerminalWindow from './sections/TerminalWindow'
 import SkillsDashboard from './sections/SkillsDashboard'
+import CareerTimeline from './sections/CareerTimeline'
 
 export default function App() {
   return (
@@ -22,6 +23,9 @@ export default function App() {
           </a>
           <a href="#skills" className="transition hover:text-[#83f28f]">
             Skills
+          </a>
+          <a href="#experience" className="transition hover:text-[#83f28f]">
+            Experience
           </a>
           <a href="#about" className="transition hover:text-[#83f28f]">
             About
@@ -72,6 +76,8 @@ export default function App() {
       </section>
 
       <SkillsDashboard />
+
+      <CareerTimeline />
 
       {/* Interactive Projects */}
       <Projects />
