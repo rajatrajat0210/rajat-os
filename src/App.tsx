@@ -73,30 +73,46 @@ export default function App() {
       {/* About / Links */}
       <section
         id="about"
-        className="mx-auto max-w-5xl scroll-mt-8 border-t border-white/10 py-8"
+        className="mx-auto max-w-5xl scroll-mt-8 border-t border-white/10 py-10 sm:py-12"
       >
-        <p className="font-mono text-xs text-[#83f28f]">
-          // ABOUT THIS ENVIRONMENT
-        </p>
+        <div className="grid gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-center md:gap-12">
+          <figure className="group relative max-w-xl overflow-hidden rounded-2xl border border-[#83f28f]/20 bg-[#0b0d10]">
+            <img
+              src="/images/rajat-cyber-pixel.png"
+              alt="Cyber pixel-art portrait of Rajat wearing glasses"
+              className="block w-full transition duration-500 group-hover:scale-[1.02]"
+            />
+            <figcaption className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-3 bg-gradient-to-t from-[#0b0d10]/95 to-transparent px-4 pb-4 pt-10 font-mono text-[10px] tracking-widest text-[#83f28f] sm:text-xs">
+              <span>OPERATOR PROFILE</span>
+              <span>RAJAT // 01</span>
+            </figcaption>
+          </figure>
 
-        <p className="mt-3 text-sm leading-6 text-gray-400">
-          Built with React, TypeScript, Tailwind CSS, and curiosity.
-          Exploring the intersection of backend engineering, gaming, and AI.
-        </p>
+          <div>
+            <p className="font-mono text-xs text-[#83f28f]">
+              // ABOUT THIS ENVIRONMENT
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold">The person behind the build.</h2>
+            <p className="mt-3 text-sm leading-6 text-gray-400">
+              Built with React, TypeScript, Tailwind CSS, and curiosity.
+              Exploring the intersection of backend engineering, gaming, and AI.
+            </p>
 
-        <a
-          href="https://github.com/rajatrajat0210"
-          target="_blank"
-          rel="noreferrer"
-          className="mt-4 inline-flex items-center gap-2 text-sm text-gray-400 transition hover:text-[#83f28f]"
-        >
-          GitHub
-          <ArrowUpRight size={14} />
-        </a>
+            <a
+              href="https://github.com/rajatrajat0210"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm text-gray-400 transition hover:text-[#83f28f]"
+            >
+              GitHub
+              <ArrowUpRight size={14} />
+            </a>
 
-        <p className="mt-8 font-mono text-xs text-gray-600">
-          RAJAT.OS © {new Date().getFullYear()} · ALL SYSTEMS NOMINAL
-        </p>
+            <p className="mt-8 font-mono text-xs text-gray-600">
+              RAJAT.OS © {new Date().getFullYear()} · ALL SYSTEMS NOMINAL
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   )
