@@ -88,6 +88,10 @@ body {
   animation: terminal-line-in 280ms ease-out both;
 }
 
+.skill-panel {
+  animation: skill-panel-enter 180ms ease-out both;
+}
+
 .terminal-shortcut {
   -webkit-tap-highlight-color: transparent;
 }
@@ -120,6 +124,17 @@ body {
   }
 }
 
+@keyframes skill-panel-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -127,7 +142,8 @@ body {
 
   .terminal-pulse,
   .terminal-cursor,
-  .terminal-line {
+  .terminal-line,
+  .skill-panel {
     animation: none;
   }
 
@@ -139,5 +155,19 @@ body {
 
   .terminal-shortcut:hover {
     transform: none;
+  }
+
+  .skill-card,
+  .skill-mark,
+  .skill-category-card,
+  .skill-category-icon {
+    transition: none !important;
+  }
+
+  .skill-card:hover,
+  .skill-card:hover .skill-mark,
+  .skill-category-card:hover,
+  .skill-category-card:hover .skill-category-icon {
+    transform: none !important;
   }
 }
