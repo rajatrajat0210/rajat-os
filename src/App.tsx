@@ -4,6 +4,7 @@ import Projects from './sections/Projects'
 import TerminalWindow from './sections/TerminalWindow'
 import SkillsDashboard from './sections/SkillsDashboard'
 import CareerTimeline from './sections/CareerTimeline'
+import Education from './sections/Education'
 
 export default function App() {
   return (
@@ -26,6 +27,9 @@ export default function App() {
           </a>
           <a href="#experience" className="transition hover:text-[#83f28f]">
             Experience
+          </a>
+          <a href="#education" className="transition hover:text-[#83f28f]">
+            Education
           </a>
           <a href="#about" className="transition hover:text-[#83f28f]">
             About
@@ -78,6 +82,8 @@ export default function App() {
       <SkillsDashboard />
 
       <CareerTimeline />
+
+      <Education />
 
       {/* Interactive Projects */}
       <Projects />

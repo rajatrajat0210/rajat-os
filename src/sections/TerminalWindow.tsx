@@ -35,6 +35,7 @@ const commandNames = [
   'projects',
   'skills',
   'experience',
+  'education',
   'contact',
   'resume',
   '/resume',
@@ -50,6 +51,7 @@ const commands: Record<string, TerminalCommand> = {
       'projects    → Jump to selected projects',
       'skills      → Browse the engineering toolkit',
       'experience  → Open the career timeline',
+      'education   → Reveal the academic record',
       'contact     → Show email and LinkedIn links',
       '/resume     → View or download the resume',
       'clear       → Clear the terminal screen',
@@ -79,6 +81,10 @@ const commands: Record<string, TerminalCommand> = {
   experience: {
     section: 'experience',
     lines: ['CAREER LOG', 'Opening the career timeline ...'],
+  },
+  education: {
+    section: 'education',
+    lines: ['ACADEMIC RECORD', 'Opening York University education details ...'],
   },
   contact: {
     section: 'about',
