@@ -11,8 +11,8 @@ export default function App() {
     <main className="min-h-screen w-full min-w-0 overflow-x-clip bg-[#0b0d10] px-4 py-6 text-[#e6eaf0] sm:px-10 sm:py-8">
       {/* Navigation */}
       <header className="mx-auto flex max-w-5xl items-center justify-between gap-4 border-b border-white/10 pb-5">
-        <a href="#" className="shrink-0 font-mono font-bold tracking-tight">
-          <span className="text-[#83f28f]">R.</span>OS
+        <a href="#" className="shrink-0 font-mono text-sm font-bold tracking-tight sm:text-base">
+          <span className="text-[#83f28f]">Hey,</span> it’s Rajat
         </a>
 
         <nav className="flex flex-wrap items-center justify-end gap-3 text-xs text-gray-400 sm:gap-5 sm:text-sm">
