@@ -44,10 +44,16 @@ export default function App() {
             ENGINEER / BUILDER / EXPLORER
           </p>
 
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
-            I build things
-            <br />
-            <span className="text-gray-500">that work.</span>
+          <h1
+            aria-label="I build things that work."
+            className="text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl"
+          >
+            <span aria-hidden="true">
+              <span className="hero-type-line">I build things</span>
+              <span className="hero-type-line hero-type-line-second text-gray-500">
+                that work.<span className="hero-type-caret" />
+              </span>
+            </span>
           </h1>
 
           <p className="mt-6 max-w-md leading-7 text-gray-400">

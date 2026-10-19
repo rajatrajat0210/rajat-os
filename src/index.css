@@ -88,6 +88,31 @@ body {
   animation: terminal-line-in 280ms ease-out both;
 }
 
+.hero-type-line {
+  display: block;
+  width: fit-content;
+  clip-path: inset(-0.18em 100% -0.18em 0);
+  animation: hero-type-reveal 850ms steps(14, end) forwards;
+}
+
+.hero-type-line-second {
+  animation-duration: 650ms;
+  animation-delay: 850ms;
+}
+
+.hero-type-caret {
+  display: inline-block;
+  width: 0.12em;
+  height: 0.82em;
+  margin-left: 0.1em;
+  background: #83f28f;
+  vertical-align: -0.03em;
+  opacity: 0;
+  animation:
+    hero-caret-show 1ms step-end 1.5s forwards,
+    terminal-blink 1s steps(2, start) 1.5s infinite;
+}
+
 .skill-panel {
   animation: skill-panel-enter 180ms ease-out both;
 }
@@ -128,6 +153,18 @@ body {
   }
 }
 
+@keyframes hero-type-reveal {
+  to {
+    clip-path: inset(-0.18em 0 -0.18em 0);
+  }
+}
+
+@keyframes hero-caret-show {
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes skill-panel-enter {
   from {
     opacity: 0;
@@ -157,6 +194,8 @@ body {
 
   .terminal-pulse,
   .terminal-cursor,
+  .hero-type-line,
+  .hero-type-caret,
   .terminal-line,
   .skill-panel,
   .career-details {
@@ -167,6 +206,11 @@ body {
   .terminal-shortcut,
   .terminal-glow {
     transition: none;
+  }
+
+  .hero-type-line {
+    clip-path: none;
+    animation: none;
   }
 
   .terminal-shortcut:hover {
