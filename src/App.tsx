@@ -1,5 +1,5 @@
 
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Link2, Mail } from 'lucide-react'
 import Projects from './sections/Projects'
 import TerminalWindow from './sections/TerminalWindow'
 import SkillsDashboard from './sections/SkillsDashboard'
@@ -110,15 +110,35 @@ export default function App() {
               Exploring the intersection of backend engineering, gaming, and AI.
             </p>
 
-            <a
-              href="https://github.com/rajatrajat0210"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-4 inline-flex items-center gap-2 text-sm text-gray-400 transition hover:text-[#83f28f]"
-            >
-              GitHub
-              <ArrowUpRight size={14} />
-            </a>
+            <div className="mt-5 flex flex-wrap gap-x-5 gap-y-3">
+              <a
+                href="mailto:rajat.rajat0210@gmail.com"
+                className="inline-flex items-center gap-2 text-sm text-gray-400 transition hover:text-[#83f28f]"
+              >
+                <Mail size={15} />
+                rajat.rajat0210@gmail.com
+                <ArrowUpRight size={13} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rajat-rajat12/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-gray-400 transition hover:text-[#83f28f]"
+              >
+                <Link2 size={15} />
+                LinkedIn
+                <ArrowUpRight size={13} />
+              </a>
+              <a
+                href="https://github.com/rajatrajat0210"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-gray-400 transition hover:text-[#83f28f]"
+              >
+                GitHub
+                <ArrowUpRight size={13} />
+              </a>
+            </div>
 
             <p className="mt-8 font-mono text-xs text-gray-600">
               RAJAT.OS © {new Date().getFullYear()} · ALL SYSTEMS NOMINAL
