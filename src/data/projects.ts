@@ -2,7 +2,6 @@
 export type ProjectCategory =
   | 'Backend'
   | 'AI'
-  | 'Gaming'
   | 'Systems'
 
 export type Project = {

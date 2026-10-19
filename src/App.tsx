@@ -47,8 +47,8 @@ export default function App() {
           </h1>
 
           <p className="mt-6 max-w-md leading-7 text-gray-400">
-            Exploring backend systems, gaming technology, AI, and the space
-            where engineering meets creativity.
+            Exploring backend engineering, AI, automation, and distributed
+            systems.
           </p>
 
           <a
@@ -61,13 +61,13 @@ export default function App() {
 
           <div className="mt-8 flex flex-wrap gap-2 font-mono text-xs text-gray-500">
             <span className="rounded border border-white/10 px-3 py-2">
-              BACKEND
+              BACKEND SYSTEMS
             </span>
             <span className="rounded border border-white/10 px-3 py-2">
-              AI / ML
+              AI & AUTOMATION
             </span>
             <span className="rounded border border-white/10 px-3 py-2">
-              GAME SYSTEMS
+              DISTRIBUTED SYSTEMS
             </span>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function App() {
             <h2 className="mt-3 text-2xl font-semibold">The person behind the build.</h2>
             <p className="mt-3 text-sm leading-6 text-gray-400">
               Built with React, TypeScript, Tailwind CSS, and curiosity.
-              Exploring the intersection of backend engineering, gaming, and AI.
+              Exploring the intersection of backend engineering, AI, and automation.
             </p>
 
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-3">

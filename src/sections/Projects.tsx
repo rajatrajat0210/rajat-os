@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { ArrowUpRight, GitBranchIcon } from 'lucide-react'
 import { projects } from '../data/projects'
 
-const filters = ['All', 'Backend', 'AI', 'Gaming', 'Systems'] as const
+const filters = ['All', 'Backend', 'AI', 'Systems'] as const
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] =
@@ -37,8 +37,8 @@ export default function Projects() {
             Engineering, made tangible.
           </h2>
           <p className="mt-3 max-w-xl text-sm leading-6 text-gray-400">
-            A selection of projects exploring backend systems, AI,
-            gaming technology, and cloud-native engineering.
+            A selection of projects across backend systems, AI, distributed
+            architecture, and cloud-native engineering.
           </p>
         </div>
         <span className="font-mono text-xs text-gray-500">

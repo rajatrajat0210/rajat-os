@@ -63,7 +63,7 @@ const commands: Record<string, TerminalCommand> = {
     lines: [
       'OPERATOR PROFILE',
       'Name: Rajat',
-      'Focus: Backend engineering, gaming systems, AI',
+      'Focus: Backend engineering, distributed systems, AI, automation',
       'Approach: Build useful things. Understand the system.',
       'Opening profile section ...',
     ],
